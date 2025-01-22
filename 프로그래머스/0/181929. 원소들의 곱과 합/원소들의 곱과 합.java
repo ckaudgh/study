@@ -7,8 +7,7 @@ class Solution {
             n1 *= num_list[i];
             n2 += num_list[i];
         }
-        if(n1<(n2*n2)) answer = 1;
-        else answer = 0;
+        answer = Math.pow(n2,2) > n1 ? 1 : 0;
         return answer;
     }
 }
