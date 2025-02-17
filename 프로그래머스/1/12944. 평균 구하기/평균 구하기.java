@@ -9,3 +9,5 @@ class Solution {
         return answer;
     }
 }
+
+        // return Arrays.stream(arr).average().getAsDouble();
