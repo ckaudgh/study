@@ -4,11 +4,7 @@ class Solution {
         for (char ch : s.toCharArray()) {
             int cnt = 0;
             while (cnt < index) {
-                if (ch == 'z') {
-                    ch = 'a';
-                } else {
-                    ch++;
-                }
+                ch = ch == 'z'?'a':(char)(ch+1);
                 if (!skip.contains(String.valueOf(ch))) {
                     cnt++;
                 }
